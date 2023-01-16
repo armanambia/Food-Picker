@@ -1,0 +1,64 @@
+{
+  "restaurants": [
+    {
+      "name": "Roll & Grill",
+      "type": "Asian",
+      "price": "$"
+    },
+    {
+      "name": "Panda Express",
+      "type": "Asian",
+      "price": "$"
+    },
+    {
+      "name": "Anjin",
+      "type": "Asian",
+      "price": "$$$"
+    },
+    {
+      "name": "El Camino Real",
+      "type": "Mexican",
+      "price": "$"
+    },
+    {
+      "name": "The Habbit Burger Grill",
+      "type": "American",
+      "price": "$"
+    },
+    {
+      "name": "In-N-Out",
+      "type": "American",
+      "price": "$"
+    },
+    {
+      "name": "Umami Burger",
+      "type": "American",
+      "price": "$$"
+    },
+    {
+      "name": "J Sushi",
+      "type": "Asian",
+      "price": "$$"
+    },
+    {
+      "name": "Tacos Los Cholos",
+      "type": "Mexican",
+      "price": "$"
+    },
+    {
+      "name": "Javier's",
+      "type": "Mexican",
+      "price": "$$$"
+    },
+    {
+      "name": "El Farolito",
+      "type": "Mexican",
+      "price": "$$"
+    },
+    {
+      "name": "Din Tai Fung",
+      "type": "Asian",
+      "price": "$$"
+    }
+  ]
+}
