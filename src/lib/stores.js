@@ -19,3 +19,4 @@ export const all_prices = food_data.restaurants
 export const filteredRestaurants = writable([])
 export const filteredTypes = writable([])
 export const filteredPrices = writable([])
+export const filteredNames = writable([])

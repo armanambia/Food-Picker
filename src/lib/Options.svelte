@@ -5,14 +5,14 @@
     import {filteredRestaurants} from './stores.js'
     import {filteredPrices} from './stores.js'
     import {filteredTypes} from './stores.js'
-
+    import {filteredNames} from './stores.js'
 
     let price_group = []
     let type_group = []
-
     let filtPriceVal
     let filtTypeVal
     let filtRestVal
+    let filtNameVal
     filteredPrices.subscribe(value => {
 		filtPriceVal = value;
 	});
@@ -22,13 +22,17 @@
     filteredRestaurants.subscribe(value => {
 		filtRestVal = value;
 	});
+    filteredNames.subscribe(value => {
+		filtNameVal = value;
+	});
 
     let clearClick = () => {
-        price_group =[]
-        type_group =[]
+        price_group = []
+        type_group = []
         filteredPrices.set(price_group)
         filteredTypes.set(type_group)
         filteredRestaurants.set([])
+        filteredNames.set([])
     }
     let submitClick = () => {
         filteredPrices.set(price_group)
@@ -36,7 +40,8 @@
         filteredRestaurants.set(all_restaurants.filter(
             obj => (filtPriceVal.includes(obj.price) && filtTypeVal.includes(obj.type))
         ))
-        
+        filteredNames.set(filtRestVal.map(obj => 
+            obj.name))
     }
 </script>
 
@@ -71,8 +76,8 @@
         </button>
     </div>
     <div class="output">
-        {#each filtRestVal as rest} 
-        <p>{rest.name}</p>
+        {#each filtNameVal as name} 
+        <p>{name}</p>
         {/each}
          
     </div>

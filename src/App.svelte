@@ -1,6 +1,6 @@
 <script>
   import Options from './lib/Options.svelte'
-  import food_data from './assets/food_data.json'
+    import Spin from './lib/Spin.svelte';
 
 </script>
 
@@ -10,7 +10,9 @@
   <div class = "options">
     <Options/>
   </div>
-
+  <div class="spin">
+    <Spin/>
+  </div>
 </main>
 
 
