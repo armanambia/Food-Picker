@@ -88,7 +88,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        gap: 20px;
     }
     .inputs {
         display: flex;

@@ -1,18 +1,26 @@
 <script>
   import Options from './lib/Options.svelte'
-    import Spin from './lib/Spin.svelte';
+  import Spin from './lib/Spin.svelte';
+  import { redo } from './lib/stores';
+    let render
+    redo.subscribe(value => {
+		render = value;
+	});
 
 </script>
 
 <main>
 
-  <h1>Food Picker</h1>
-  <div class = "options">
-    <Options/>
-  </div>
-  <div class="spin">
-    <Spin/>
-  </div>
+  <h1>Food Picker</h1> 
+  <Options/>
+  <Spin/>
+
 </main>
 
 
+<style>
+  main {
+    display:flex;
+    flex-direction: column;
+  }
+</style>
