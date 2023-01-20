@@ -1,5 +1,7 @@
+<script>
 
 
+</script>
 
 
 <div id="spin">
@@ -16,9 +18,8 @@
                     picked = 100000,
                     oldpick = [],
                     color = d3.scale.category20();//category20c()
-                // var temp_data = filtNameVal.map( (elem, id) => 
-                //     {"label":elem, "value":id, "question":elem}
-                // )
+                    
+                
                 var data = [
                             {"label":"Dell LAPTOP",  "value":1,  "question":"What CSS property is used for specifying the area between the content and its border?"}, // padding
                             {"label":"IMAC PRO",  "value":2,  "question":"What CSS property is used for changing the font?"}, //font-family
@@ -31,6 +32,7 @@
                             {"label":"MOTOROLLA",  "value":9,  "question":"What are the fonts that don't have serifs at the ends of letters called?"}, //sans-serif
                             {"label":"BMW", "value":10, "question":"With CSS selectors, what character prefix should one use to specify a class?"}
                 ];
+
                 // console.log(temp_data)
                 var svg = d3.select('#chart')
                     .append("svg")

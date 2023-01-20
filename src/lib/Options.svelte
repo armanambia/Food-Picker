@@ -6,6 +6,7 @@
     import {filteredPrices} from './stores.js'
     import {filteredTypes} from './stores.js'
     import {filteredNames} from './stores.js'
+    import { redo } from './stores.js'
 
     let price_group = []
     let type_group = []
@@ -42,6 +43,7 @@
         ))
         filteredNames.set(filtRestVal.map(obj => 
             obj.name))
+        redo.update(val => !val)
     }
 </script>
 

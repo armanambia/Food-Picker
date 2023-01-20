@@ -13,7 +13,9 @@
 
   <h1>Food Picker</h1> 
   <Options/>
+  {#key render}
   <Spin/>
+  {/key}
 
 </main>
 
